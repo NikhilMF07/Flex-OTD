@@ -3,9 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Siliguri Biz App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <span>Siliguri Biz App</span>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search Current Stock" class="search-input">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="currency-selector">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="user-avatar">A</div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Current Stock</h3>
+                    <div class="sidebar-actions">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                </div>
+                <div class="category-list">
+                    <div class="category-item active" data-category="all">
+                        <span class="category-name">All</span>
+                    </div>
+                    <div class="category-item" data-category="accessories">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Accessories</span>
+                        <span class="category-count">27.00</span>
+                    </div>
+                    <div class="category-item" data-category="bond">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Bond</span>
+                        <span class="category-count">852.00</span>
+                    </div>
+                    <div class="category-item" data-category="foam-board">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Foam Board</span>
+                        <span class="category-count">160.00</span>
+                    </div>
+                    <div class="category-item" data-category="lamination">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Lamination</span>
+                        <span class="category-count">9,073.99</span>
+                    </div>
+                    <div class="category-item" data-category="led-modules">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Led Modules</span>
+                        <span class="category-count">8,100.00</span>
+                    </div>
+                    <div class="category-item" data-category="normal-flex">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Normal Flex</span>
+                        <span class="category-count">261,548.55</span>
+                    </div>
+                    <div class="category-item" data-category="one-way-vision">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">One Way Vision</span>
+                        <span class="category-count">1,599.53</span>
+                    </div>
+                    <div class="category-item" data-category="power-supply">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Power Supply</span>
+                        <span class="category-count">190.00</span>
+                    </div>
+                    <div class="category-item" data-category="primary">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Primary</span>
+                        <span class="category-count">2,622.20</span>
+                    </div>
+                    <div class="category-item" data-category="standy">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Standy</span>
+                        <span class="category-count">71.00</span>
+                    </div>
+                    <div class="category-item" data-category="star-flex">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Star Flex</span>
+                        <span class="category-count">1,490.81</span>
+                    </div>
+                    <div class="category-item" data-category="vinyl">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="category-name">Vinyl</span>
+                        <span class="category-count">17,696.22</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Table -->
+            <main class="table-container">
+                <div class="table-wrapper">
+                    <table class="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Item Description</th>
+                                <th>Length</th>
+                                <th>Qty</th>
+                                <th>Alt Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventoryTableBody">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-scroll-indicator">
+                    <div class="scroll-bar"></div>
+                </div>
+            </main>
+
+            <!-- Detail Panel -->
+            <aside class="detail-panel">
+                <div class="detail-header">
+                    <div class="detail-nav">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-expand-alt"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="detail-content" id="detailContent">
+                    <div class="detail-category">Normal Flex</div>
+                    <div class="detail-item-description">
+                        <label>Item Description</label>
+                        <div class="detail-value">Pvc Sheeting In Roll 002 Hg Bb 3.2 New</div>
+                    </div>
+                    <div class="detail-length">
+                        <label>Length</label>
+                        <div class="detail-value">50</div>
+                    </div>
+                    <div class="detail-qty">
+                        <label>Qty</label>
+                        <div class="detail-value">25,833.38</div>
+                    </div>
+                    <div class="detail-alt-qty">
+                        <label>Alt Qty</label>
+                        <div class="detail-value">15</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
