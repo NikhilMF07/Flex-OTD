@@ -1,0 +1,100 @@
+import type { StockItem } from './types';
+
+export const stockItems: StockItem[] = [
+  {
+    id: 'nf-1',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 50,
+    qty: 25833.38,
+    altQty: 15,
+  },
+  {
+    id: 'nf-2',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 24608.42,
+    altQty: 9,
+  },
+  {
+    id: 'nf-3',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 17224.41,
+    altQty: 8,
+  },
+  {
+    id: 'nf-4',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 13087.94,
+    altQty: 8,
+  },
+  {
+    id: 'nf-5',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 9644.46,
+    altQty: 5,
+  },
+  {
+    id: 'nf-6',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 8725.25,
+    altQty: 6,
+  },
+  {
+    id: 'nf-7',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 7233.34,
+    altQty: 3,
+  },
+  {
+    id: 'nf-8',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 70,
+    qty: 5726.40,
+    altQty: 4,
+  },
+  {
+    id: 'nf-9',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 50,
+    qty: 5166.68,
+    altQty: 3,
+  },
+  {
+    id: 'nf-10',
+    category: 'Normal Flex',
+    itemDescription: 'Pvc Sheeting In Roll 002 Hq Bb 3.2 New',
+    length: 50,
+    qty: 5166.67,
+    altQty: 4,
+  },
+  // A few other categories with small samples
+  { id: 'ac-1', category: 'Accessories', itemDescription: 'Mounting Clips Pack', length: 0, qty: 27.0, altQty: 0 },
+  { id: 'bo-1', category: 'Bond', itemDescription: 'Adhesive Bond X100', length: 0, qty: 852.0, altQty: 0 },
+  { id: 'fb-1', category: 'Foam Board', itemDescription: 'Foam Board 5mm', length: 0, qty: 160.0, altQty: 0 },
+  { id: 'lam-1', category: 'Lamination', itemDescription: 'Lamination Roll 1m', length: 0, qty: 9073.99, altQty: 0 },
+  { id: 'led-1', category: 'Led Modules', itemDescription: 'LED Module 12V', length: 0, qty: 8100.0, altQty: 0 },
+  { id: 'owv-1', category: 'One Way Vision', itemDescription: 'OWV Roll 1.2m', length: 0, qty: 1599.53, altQty: 0 },
+  { id: 'ps-1', category: 'Power Supply', itemDescription: 'SMPS 12V 10A', length: 0, qty: 190.0, altQty: 0 },
+  { id: 'pri-1', category: 'Primary', itemDescription: 'Primary Vinyl', length: 0, qty: 2622.2, altQty: 0 },
+  { id: 'std-1', category: 'Standy', itemDescription: 'Standy Roll 1m', length: 0, qty: 71.0, altQty: 0 },
+  { id: 'sf-1', category: 'Star Flex', itemDescription: 'Star Flex 340', length: 0, qty: 1490.81, altQty: 0 },
+  { id: 'vin-1', category: 'Vinyl', itemDescription: 'Vinyl Premium', length: 0, qty: 17696.22, altQty: 0 },
+];
+
+export const categories = Array.from(
+  new Set(['All', ...stockItems.map((s) => s.category)])
+);
