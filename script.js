@@ -1,377 +1,389 @@
-// Sample inventory data based on the screenshot
+// Sample inventory data
 const inventoryData = [
     {
         id: 1,
-        description: "Pvc Sheeting In Roll 002 Hq Bb 3.2 New",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 002 Hg Bb 3.2 New',
         length: 50,
         qty: 25833.38,
-        altQty: 15,
-        category: "normal-flex"
+        altQty: 15
     },
     {
         id: 2,
-        description: "Pvc Sheeting In Roll 003 Premium Quality",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 003 Hg Bb 3.2 Premium',
         length: 70,
         qty: 24608.42,
-        altQty: 9,
-        category: "normal-flex"
+        altQty: 9
     },
     {
         id: 3,
-        description: "Pvc Sheeting In Roll 004 Standard Grade",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 004 Hg Bb 3.2 Standard',
         length: 70,
         qty: 17224.41,
-        altQty: 8,
-        category: "normal-flex"
+        altQty: 8
     },
     {
         id: 4,
-        description: "Pvc Sheeting In Roll 005 Heavy Duty",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 005 Hg Bb 3.2 Economy',
         length: 70,
         qty: 13087.94,
-        altQty: 8,
-        category: "normal-flex"
+        altQty: 8
     },
     {
         id: 5,
-        description: "Pvc Sheeting In Roll 006 Weather Resistant",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 006 Hg Bb 3.2 Basic',
         length: 70,
         qty: 13087.85,
-        altQty: 9,
-        category: "normal-flex"
+        altQty: 9
     },
     {
         id: 6,
-        description: "Pvc Sheeting In Roll 007 UV Protected",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 007 Hg Bb 3.2 Pro',
         length: 70,
         qty: 9644.46,
-        altQty: 5,
-        category: "normal-flex"
+        altQty: 5
     },
     {
         id: 7,
-        description: "Pvc Sheeting In Roll 008 Fire Retardant",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 008 Hg Bb 3.2 Ultra',
         length: 70,
         qty: 8725.25,
-        altQty: 6,
-        category: "normal-flex"
+        altQty: 6
     },
     {
         id: 8,
-        description: "Pvc Sheeting In Roll 009 Anti-Static",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 009 Hg Bb 3.2 Max',
         length: 70,
         qty: 7233.34,
-        altQty: 3,
-        category: "normal-flex"
+        altQty: 3
     },
     {
         id: 9,
-        description: "Pvc Sheeting In Roll 010 Clear Transparent",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 010 Hg Bb 3.2 Super',
         length: 70,
         qty: 5726.40,
-        altQty: 4,
-        category: "normal-flex"
+        altQty: 4
     },
     {
         id: 10,
-        description: "Pvc Sheeting In Roll 011 Colored Variant",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 011 Hg Bb 3.2 Deluxe',
         length: 50,
         qty: 5166.68,
-        altQty: 3,
-        category: "normal-flex"
+        altQty: 3
     },
     {
         id: 11,
-        description: "Pvc Sheeting In Roll 012 Textured Surface",
+        category: 'normal-flex',
+        description: 'Pvc Sheeting In Roll 012 Hg Bb 3.2 Elite',
         length: 50,
         qty: 5166.67,
-        altQty: 4,
-        category: "normal-flex"
+        altQty: 4
     },
     {
         id: 12,
-        description: "LED Strip Module 5050 RGB",
-        length: 5,
-        qty: 2500.00,
-        altQty: 50,
-        category: "led-modules"
+        category: 'accessories',
+        description: 'Mounting Brackets Set A1',
+        length: 25,
+        qty: 150.00,
+        altQty: 12
     },
     {
         id: 13,
-        description: "LED Strip Module 3528 White",
-        length: 5,
-        qty: 3200.00,
-        altQty: 40,
-        category: "led-modules"
+        category: 'accessories',
+        description: 'Cable Management Kit B2',
+        length: 30,
+        qty: 85.50,
+        altQty: 8
     },
     {
         id: 14,
-        description: "LED Strip Module 2835 Warm White",
-        length: 5,
-        qty: 2400.00,
-        altQty: 30,
-        category: "led-modules"
+        category: 'led-modules',
+        description: 'LED Strip Module 5050 RGB',
+        length: 100,
+        qty: 2500.00,
+        altQty: 25
     },
     {
         id: 15,
-        description: "Vinyl Adhesive Sheet Matte Black",
-        length: 100,
-        qty: 8500.00,
-        altQty: 25,
-        category: "vinyl"
+        category: 'led-modules',
+        description: 'LED Controller DMX512',
+        length: 15,
+        qty: 1200.00,
+        altQty: 6
     },
     {
         id: 16,
-        description: "Vinyl Adhesive Sheet Glossy White",
-        length: 100,
-        qty: 9196.22,
-        altQty: 30,
-        category: "vinyl"
+        category: 'vinyl',
+        description: 'Adhesive Vinyl Matte Black',
+        length: 150,
+        qty: 8500.00,
+        altQty: 45
     },
     {
         id: 17,
-        description: "Foam Board 5mm Thickness",
-        length: 122,
-        qty: 160.00,
-        altQty: 20,
-        category: "foam-board"
-    },
-    {
-        id: 18,
-        description: "Lamination Film Glossy",
-        length: 50,
-        qty: 4500.99,
-        altQty: 15,
-        category: "lamination"
-    },
-    {
-        id: 19,
-        description: "Lamination Film Matte",
-        length: 50,
-        qty: 4573.00,
-        altQty: 18,
-        category: "lamination"
-    },
-    {
-        id: 20,
-        description: "Power Supply 12V 5A",
-        length: 0,
-        qty: 95.00,
-        altQty: 10,
-        category: "power-supply"
-    },
-    {
-        id: 21,
-        description: "Power Supply 24V 3A",
-        length: 0,
-        qty: 95.00,
-        altQty: 8,
-        category: "power-supply"
+        category: 'vinyl',
+        description: 'Adhesive Vinyl Glossy White',
+        length: 150,
+        qty: 7200.00,
+        altQty: 38
     }
 ];
 
-let currentData = inventoryData;
-let selectedItem = inventoryData[0];
+// Global variables
+let currentFilter = 'all';
+let filteredData = [...inventoryData];
+let selectedItemId = 1;
 
-// DOM Elements
+// DOM elements
 const searchInput = document.getElementById('searchInput');
-const tableBody = document.getElementById('inventoryTableBody');
+const inventoryTableBody = document.getElementById('inventoryTableBody');
+const detailContent = document.getElementById('detailContent');
 const categoryItems = document.querySelectorAll('.category-item');
 
-// Detail panel elements
-const detailItemDescription = document.getElementById('detailItemDescription');
-const detailLength = document.getElementById('detailLength');
-const detailQty = document.getElementById('detailQty');
-const detailAltQty = document.getElementById('detailAltQty');
-
 // Initialize the application
-function init() {
-    renderTable(currentData);
-    updateDetailPanel(selectedItem);
+document.addEventListener('DOMContentLoaded', function() {
+    renderTable();
+    updateDetailPanel();
     setupEventListeners();
-}
-
-// Render the inventory table
-function renderTable(data) {
-    tableBody.innerHTML = '';
-    
-    data.forEach((item, index) => {
-        const row = document.createElement('tr');
-        if (item.id === selectedItem.id) {
-            row.classList.add('selected');
-        }
-        
-        row.innerHTML = `
-            <td><span class="item-description">${item.description}</span></td>
-            <td>${item.length}</td>
-            <td>${item.qty.toLocaleString()}</td>
-            <td>${item.altQty}</td>
-        `;
-        
-        row.addEventListener('click', () => {
-            // Remove selection from other rows
-            document.querySelectorAll('.inventory-table tbody tr').forEach(r => {
-                r.classList.remove('selected');
-            });
-            
-            // Add selection to clicked row
-            row.classList.add('selected');
-            
-            // Update selected item and detail panel
-            selectedItem = item;
-            updateDetailPanel(item);
-        });
-        
-        tableBody.appendChild(row);
-    });
-}
-
-// Update the detail panel with selected item information
-function updateDetailPanel(item) {
-    detailItemDescription.textContent = item.description;
-    detailLength.textContent = item.length;
-    detailQty.textContent = item.qty.toLocaleString();
-    detailAltQty.textContent = item.altQty;
-}
+});
 
 // Setup event listeners
 function setupEventListeners() {
     // Search functionality
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        const filteredData = inventoryData.filter(item =>
-            item.description.toLowerCase().includes(searchTerm)
-        );
-        currentData = filteredData;
-        renderTable(currentData);
-        
-        // If current selected item is not in filtered results, select first item
-        if (filteredData.length > 0 && !filteredData.find(item => item.id === selectedItem.id)) {
-            selectedItem = filteredData[0];
-            updateDetailPanel(selectedItem);
-        }
-    });
-
+    searchInput.addEventListener('input', handleSearch);
+    
     // Category filtering
     categoryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Remove active class from all categories
-            categoryItems.forEach(cat => cat.classList.remove('active'));
-            
-            // Add active class to clicked category
-            item.classList.add('active');
-            
-            const category = item.dataset.category;
-            
-            if (category === 'all') {
-                currentData = inventoryData;
-            } else {
-                currentData = inventoryData.filter(inventoryItem => 
-                    inventoryItem.category === category
-                );
-            }
-            
-            renderTable(currentData);
-            
-            // Select first item in filtered results
-            if (currentData.length > 0) {
-                selectedItem = currentData[0];
-                updateDetailPanel(selectedItem);
-            }
-        });
-    });
-
-    // Detail panel navigation
-    const detailNavButtons = document.querySelectorAll('.detail-nav i');
-    detailNavButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const icon = e.target;
-            
-            if (icon.classList.contains('fa-chevron-left')) {
-                navigateItem(-1);
-            } else if (icon.classList.contains('fa-chevron-right')) {
-                navigateItem(1);
-            } else if (icon.classList.contains('fa-expand-alt')) {
-                // Toggle detail panel size (could implement full-screen mode)
-                console.log('Expand detail panel');
-            } else if (icon.classList.contains('fa-times')) {
-                // Close detail panel (could hide it on mobile)
-                console.log('Close detail panel');
-            }
-        });
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            navigateItem(-1);
-        } else if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            navigateItem(1);
-        }
+        item.addEventListener('click', handleCategoryClick);
     });
 }
 
-// Navigate between items in the current filtered data
-function navigateItem(direction) {
-    const currentIndex = currentData.findIndex(item => item.id === selectedItem.id);
+// Handle search input
+function handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase();
+    
+    if (searchTerm === '') {
+        filteredData = getFilteredByCategory();
+    } else {
+        filteredData = getFilteredByCategory().filter(item =>
+            item.description.toLowerCase().includes(searchTerm) ||
+            item.category.toLowerCase().includes(searchTerm)
+        );
+    }
+    
+    renderTable();
+}
+
+// Handle category selection
+function handleCategoryClick(event) {
+    const categoryItem = event.currentTarget;
+    const category = categoryItem.dataset.category;
+    
+    // Update active state
+    categoryItems.forEach(item => item.classList.remove('active'));
+    categoryItem.classList.add('active');
+    
+    // Update current filter
+    currentFilter = category;
+    
+    // Filter data
+    filteredData = getFilteredByCategory();
+    
+    // Apply search if there's a search term
+    const searchTerm = searchInput.value.toLowerCase();
+    if (searchTerm !== '') {
+        filteredData = filteredData.filter(item =>
+            item.description.toLowerCase().includes(searchTerm) ||
+            item.category.toLowerCase().includes(searchTerm)
+        );
+    }
+    
+    renderTable();
+}
+
+// Get filtered data by category
+function getFilteredByCategory() {
+    if (currentFilter === 'all') {
+        return [...inventoryData];
+    }
+    return inventoryData.filter(item => item.category === currentFilter);
+}
+
+// Render the inventory table
+function renderTable() {
+    inventoryTableBody.innerHTML = '';
+    
+    if (filteredData.length === 0) {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td colspan="4" style="text-align: center; padding: 40px; color: #666;">
+                No items found
+            </td>
+        `;
+        inventoryTableBody.appendChild(row);
+        return;
+    }
+    
+    filteredData.forEach(item => {
+        const row = document.createElement('tr');
+        row.dataset.itemId = item.id;
+        
+        if (item.id === selectedItemId) {
+            row.classList.add('selected');
+        }
+        
+        row.innerHTML = `
+            <td>
+                <a href="#" class="item-description" data-item-id="${item.id}">
+                    ${item.description}
+                </a>
+            </td>
+            <td>${item.length}</td>
+            <td>${formatNumber(item.qty)}</td>
+            <td>${item.altQty}</td>
+        `;
+        
+        // Add click event listener
+        row.addEventListener('click', () => handleRowClick(item.id));
+        
+        inventoryTableBody.appendChild(row);
+    });
+}
+
+// Handle table row click
+function handleRowClick(itemId) {
+    selectedItemId = itemId;
+    
+    // Update selected row styling
+    const rows = inventoryTableBody.querySelectorAll('tr');
+    rows.forEach(row => row.classList.remove('selected'));
+    
+    const selectedRow = inventoryTableBody.querySelector(`tr[data-item-id="${itemId}"]`);
+    if (selectedRow) {
+        selectedRow.classList.add('selected');
+    }
+    
+    // Update detail panel
+    updateDetailPanel();
+}
+
+// Update the detail panel
+function updateDetailPanel() {
+    const selectedItem = inventoryData.find(item => item.id === selectedItemId);
+    
+    if (!selectedItem) return;
+    
+    const categoryName = formatCategoryName(selectedItem.category);
+    
+    detailContent.innerHTML = `
+        <div class="detail-category">${categoryName}</div>
+        <div class="detail-item-description">
+            <label>Item Description</label>
+            <div class="detail-value">${selectedItem.description}</div>
+        </div>
+        <div class="detail-length">
+            <label>Length</label>
+            <div class="detail-value">${selectedItem.length}</div>
+        </div>
+        <div class="detail-qty">
+            <label>Qty</label>
+            <div class="detail-value">${formatNumber(selectedItem.qty)}</div>
+        </div>
+        <div class="detail-alt-qty">
+            <label>Alt Qty</label>
+            <div class="detail-value">${selectedItem.altQty}</div>
+        </div>
+    `;
+}
+
+// Format category name for display
+function formatCategoryName(category) {
+    return category
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+// Format numbers with commas
+function formatNumber(num) {
+    return num.toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+        event.preventDefault();
+        navigateTable(event.key === 'ArrowUp' ? -1 : 1);
+    }
+});
+
+// Navigate table with keyboard
+function navigateTable(direction) {
+    const currentIndex = filteredData.findIndex(item => item.id === selectedItemId);
     let newIndex = currentIndex + direction;
     
-    if (newIndex < 0) {
-        newIndex = currentData.length - 1;
-    } else if (newIndex >= currentData.length) {
-        newIndex = 0;
-    }
+    if (newIndex < 0) newIndex = filteredData.length - 1;
+    if (newIndex >= filteredData.length) newIndex = 0;
     
-    if (currentData[newIndex]) {
-        selectedItem = currentData[newIndex];
-        updateDetailPanel(selectedItem);
-        renderTable(currentData); // Re-render to update selection
+    if (filteredData[newIndex]) {
+        handleRowClick(filteredData[newIndex].id);
         
-        // Scroll selected item into view
-        const selectedRow = document.querySelector('.inventory-table tbody tr.selected');
+        // Scroll the selected row into view
+        const selectedRow = inventoryTableBody.querySelector(`tr[data-item-id="${filteredData[newIndex].id}"]`);
         if (selectedRow) {
-            selectedRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            selectedRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     }
 }
 
-// Mobile menu toggle (for responsive design)
-function toggleMobileMenu() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('open');
+// Add some interactive features
+document.addEventListener('click', function(event) {
+    // Handle item description clicks
+    if (event.target.classList.contains('item-description')) {
+        event.preventDefault();
+        const itemId = parseInt(event.target.dataset.itemId);
+        handleRowClick(itemId);
+    }
+});
+
+// Add smooth scrolling behavior
+function smoothScrollToRow(rowElement) {
+    rowElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
 }
 
-// Add mobile menu button functionality if needed
-document.addEventListener('DOMContentLoaded', () => {
-    // Add mobile menu button to header if screen is small
-    if (window.innerWidth <= 640) {
-        const headerLeft = document.querySelector('.header-left');
-        const menuButton = document.createElement('button');
-        menuButton.innerHTML = '<i class="fas fa-bars"></i>';
-        menuButton.className = 'mobile-menu-btn';
-        menuButton.style.cssText = `
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            margin-right: 10px;
-            cursor: pointer;
-            padding: 5px;
-        `;
-        menuButton.addEventListener('click', toggleMobileMenu);
-        headerLeft.insertBefore(menuButton, headerLeft.firstChild);
+// Update scroll indicator
+function updateScrollIndicator() {
+    const tableWrapper = document.querySelector('.table-wrapper');
+    const scrollBar = document.querySelector('.scroll-bar');
+    
+    if (tableWrapper && scrollBar) {
+        const scrollPercentage = tableWrapper.scrollTop / (tableWrapper.scrollHeight - tableWrapper.clientHeight);
+        const maxWidth = scrollBar.parentElement.clientWidth;
+        const scrollBarWidth = Math.max(30, maxWidth * 0.3);
+        const scrollPosition = (maxWidth - scrollBarWidth) * scrollPercentage;
+        
+        scrollBar.style.width = `${scrollBarWidth}px`;
+        scrollBar.style.transform = `translateX(${scrollPosition}px)`;
     }
-});
+}
 
-// Handle window resize
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 640) {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.classList.remove('open');
-    }
-});
+// Add scroll event listener
+document.querySelector('.table-wrapper')?.addEventListener('scroll', updateScrollIndicator);
 
-// Initialize the application when DOM is loaded
-document.addEventListener('DOMContentLoaded', init);
+// Initialize scroll indicator
+setTimeout(updateScrollIndicator, 100);
